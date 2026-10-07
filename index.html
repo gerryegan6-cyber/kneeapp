@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Knee Rehab</title>
+<meta name="description" content="A 10-week, no-kneeling knee strengthening programme with guided timer and tracker.">
+<meta name="theme-color" content="#0e7c7b">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Knee Rehab">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<header class="top"><span class="logo">🦵</span><b>Knee Rehab</b></header>
+<main id="view" aria-live="polite"></main>
+<nav aria-label="Main">
+  <button data-tab="today" aria-current="page"><i>🏠</i>Today</button>
+  <button data-tab="plan"><i>📋</i>Plan</button>
+  <button data-tab="timer"><i>⏱</i>Timer</button>
+  <button data-tab="progress"><i>📈</i>Progress</button>
+  <button data-tab="guide"><i>ℹ️</i>Guide</button>
+</nav>
+<div id="runner" hidden></div>
+<div id="sheet" hidden><div class="panel" role="dialog" aria-modal="true"><div id="sheetbody"></div></div></div>
+<div id="toast" role="status"></div>
+<script src="js/data.js"></script>
+<script src="js/figures.js"></script>
+<script src="js/store.js"></script>
+<script src="js/timer.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
